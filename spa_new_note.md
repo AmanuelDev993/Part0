@@ -4,15 +4,15 @@
 sequenceDiagram
     participant browser
     participant server
-
-    Note right of browser: User writes a note and clicks the Save button
+    
+    Note right of browser: User creates a new note and hits the Save button
 
     browser->>server: POST /exampleapp/new_note_spa
     activate server
-    server-->>browser: JSON containing the new note
+    server-->>browser: JSON with the new note
     deactivate server
 
-    Note right of browser: Browser adds the new note to the page
+    Note right of browser: New note is added to the page by the browser
 
-    Note right of browser: Browser updates the displayed notes without reloading the page
+    Note right of browser: Notes on the page are refreshed without reloading the page
 ```
