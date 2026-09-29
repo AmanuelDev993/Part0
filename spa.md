@@ -1,4 +1,4 @@
-#### 0.5: Single page app diagram
+#### 0.5: Diagram of single-page app
 
 ```mermaid
 sequenceDiagram
@@ -20,12 +20,12 @@ sequenceDiagram
     server-->>browser: JavaScript file
     deactivate server
 
-    Note right of browser: Browser executes the JavaScript
+    Note right of browser: The JavaScript is run in the browser
 
     browser->>server: GET /exampleapp/data.json
     activate server
     server-->>browser: JSON containing the notes
     deactivate server
 
-    Note right of browser: JavaScript renders the notes on the page
+    Note right of browser: The notes are rendered using the JavaScript
 ```
